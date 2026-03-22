@@ -1,0 +1,137 @@
+#Hierarchical Inheritance: 💻
+✅Hierarchical Inheritance is a type of inheritance where one parent class is inherited by 
+multiple child classes.
+
+🐍Syntax:
+class Parent:
+ # statement block
+class Child1(Parent):
+ # statement block
+class Child2(Parent):
+ # statement block
+class Child3(Parent):
+ # statement block
+
+🚀#Social Media Applications
+
+class SocialMedia:
+ def __init__(self, un, pw):
+ self.un = un
+ self.pw = pw
+def display_odetails(self):
+ print(self.un, self.pw)
+def login(self, user_name, password):
+ if self.un == user_name:
+ if self.pw == password:
+ print('Congratulations! Logged in successfully.')
+ else:
+ print('Bad luck! Incorrect password.')
+ else:
+ print('Username does not match. Please enter the correct one.')
+class Instagram(SocialMedia):
+ pass
+class Facebook(SocialMedia):
+ pass
+class Snapchat(SocialMedia):
+ pass
+keerthana = Facebook('keerthi', 'keerthi@123')
+keerthana.login(input('Enter your username: '), input('Enter password: '))
+
+#Explanation:
+• SocialMedia is the parent class.
+ Quick Notes Page 10 
+• SocialMedia is the parent class.
+• Instagram, Facebook, and Snapchat are child classes inheriting from it.
+• All child classes can access parent class methods like login() and display_odetails().
+
+🚀#ATM Transactions
+
+class ATM:
+ def insert_card(self):
+ print('Card Inserted')
+class Kishore(ATM):
+ def transaction(self):
+ print('Withdrawing money')
+class Pawan(ATM):
+ def transaction(self):
+ print('Checking balance')
+class Nireeksha(ATM):
+ def transaction(self):
+ print('Changing PIN number')
+u1 = Kishore()
+u1.insert_card()
+u1.transaction()
+print('------------------')
+u2 = Pawan()
+u2.insert_card()
+u2.transaction()
+print('------------------')
+u3 = Nireeksha()
+u3.insert_card()
+u3.transaction()
+
+#Explanation:
+• The parent class ATM provides a common method insert_card().
+• Each child class (Kishore, Pawan, Nireeksha) performs a different type of 
+transaction.
+
+🚀#Food Delivery Apps
+
+class FoodApp:
+ def open(self):
+ print('Opening Food App')
+class Swiggy(FoodApp): # Single level inheritance
+ def order(self):
+ print('Food will come late but no coupon')
+class Zomato(FoodApp): # Hierarchical inheritance
+ def order(self):
+ print('Food and delivery charges are high')
+class Logesh(Zomato, Swiggy): # Multiple inheritance
+def hungry(self):
+ print('Orders food from whoever gives free delivery')
+obj1 = Logesh()
+obj1.hungry()
+obj1.order()
+
+#Output:
+Orders food from whoever gives free delivery
+Food and delivery charges are high
+#Explanation:
+• FoodApp → Parent
+• Swiggy and Zomato → Hierarchical inheritance
+• Logesh → uses Multiple Inheritance by inheriting from both.
+
+
+🚀#School Management Example:
+
+class School:
+ def intimation(self):
+ print('School Bell Rang')
+class Teacher(School):
+ def teaching(self):
+ print('Explaining OOPs Concepts')
+class Student(School):
+ def listen(self):
+ print('Acting sincere but not really studying')
+class ClassLeader(Teacher, Student):
+ def manage(self):
+ print('Taking attendance and disturbing class')
+o1 = ClassLeader()
+o1.intimation()
+o1.teaching()
+o1.listen()
+o1.manage()
+
+#Output:
+School Bell Rang
+Explaining OOPs Concepts
+Acting sincere but not really studying
+Taking attendance and disturbing class.
+
+#Explanation:
+• Teacher and Student are derived from School → Hierarchical Inheritance
+• ClassLeader is derived from both Teacher and Student → Multiple Inheritance
+Hence, this structure is an example of Hybrid Inheritance.
+
+
+
