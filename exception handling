@@ -1,0 +1,232 @@
+#exception Handling:
+
+
+try
+
+
+except
+
+
+'''
+1.specific exception handling
+2.generic exception handling
+3.default exception handling
+
+
+
+
+1.specific exception handling:used to handle known exception
+
+
+syntax:
+
+
+    try:
+
+
+        ----program---
+
+
+    except Errorname1:
+
+
+        ---solution--
+
+
+    except Errorname2:
+
+
+        ---solution--
+
+
+        .
+
+
+        .
+
+
+        .
+
+
+    except Errornamen:
+
+
+        ---solution--
+
+
+def sam():
+
+
+    try:
+
+
+        a=int(input('enter a number:'))
+
+
+        b=int(input('enter a number2:'))
+
+
+        print(a/b)
+
+
+    except ZeroDivisionError:
+
+
+        print('the second value should not be 0')
+
+
+        sam()
+
+
+
+    except NameError:
+
+
+        print('check all variable names')
+
+
+
+sam()
+
+
+
+
+        
+
+
+
+            
+
+
+    
+
+
+    
+
+
+
+
+1.generic exception handling:used to handle known or unknown exception
+
+
+syntax 1:
+
+
+    try:
+
+
+        ----program---
+
+
+    except Exception:
+
+
+        ---solution--
+
+
+syntax 2:
+
+
+    try:
+
+
+        ----program---
+
+
+    except Exception as variablename:
+
+
+        ---solution--
+
+
+
+
+try:
+
+
+    a=int(input('enter a number:'))
+
+
+    b=int(input('enter a number2:'))
+
+
+    print(a/b)
+
+
+except Exception:
+
+
+    print('handling  exception')
+
+
+
+
+def sam():
+
+
+    try:
+
+
+        a=int(input('enter a number:'))
+
+
+        b=int(input('enter a number2:'))
+
+
+        print(a/b)
+
+
+    except Exception as n:
+
+
+        print('handling  exception')
+
+
+        print(n)
+
+
+        sam()
+
+
+
+sam()
+
+
+
+
+#default exception:
+
+
+syntx :
+
+
+    try:
+
+
+        ----instructions---
+
+
+
+
+    except:
+
+
+        ---solution---
+
+
+'''
+
+
+try:
+
+
+    A=input('enter your data')
+
+
+    print(A+10)
+
+
+except:
+
+
+    print('exception handled')
